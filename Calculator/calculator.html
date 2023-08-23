@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <span>Great Learning calculator</span>
+    <table>
+    <tr>
+        <td colspan="3"><input type="text" class="text" id="display"></td>
+        <td><button type="submit" class="btn-2" onclick="clr('c')">C</button></td>
+    </tr>
+    <tr>
+
+        <td><button type="submit" class="btn" onclick='res(1)'>1</button></td>
+        <td><button type="submit" class="btn"onclick='res(2)' >2</button></td>
+        <td><button type="submit" class="btn" onclick='res(3)'>3</button></td>
+        <td><button type="submit" class="btn-2" onclick="res('/')">/</button></td>
+    </tr> 
+    <tr>
+        <td><button type="submit" class="btn"onclick='res(4)' >4</button></td>
+        <td><button type="submit" class="btn"onclick='res(5)' >5</button></td>
+        <td><button type="submit" class="btn"onclick='res(6)' >6</button></td>
+        <td><button type="submit" class="btn-2" onclick="res('-')">-</button></td>
+    </tr> 
+    <tr>
+        <td><button type="submit" class="btn" onclick='res(7)'>7</button></td>
+        <td><button type="submit" class="btn" onclick='res(8)'>8</button></td>
+        <td><button type="submit" class="btn" onclick='res(9)'>9</button></td>
+        <td><button type="submit" class="btn-2" onclick="res('+')">+</button></td>
+    </tr> 
+    <tr>
+        <td><button type="submit" class="btn-3"onclick="res('.')" >.</button></td>
+        <td><button type="submit" class="btn" onclick='res(0)'>0</button></td>
+        <td><button type="submit" class="btn-3" onclick="sol('=')">=</button></td>
+        <td><button type="submit" class="btn-2" onclick="res('*')">*</button></td>
+    </tr> 
+
+
+
+
+
+    </table>
+
+    
+</body>
+<script>
+    function res(val){
+        document.getElementById('display').value+=val;
+       
+    }
+    function clr(){
+       document.getElementById('display').value="";
+    }
+    function sol(){
+        var x=document.getElementById('display').value;
+        let y=eval(x);
+        document.getElementById('display').value=y;
+
+    }
+</script>
+</html>

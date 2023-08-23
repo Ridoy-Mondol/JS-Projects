@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    transition: 0.2s;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:250px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    padding:5px;
+    border-radius: 4px;
+}
+#btn{
+    width:95%;
+    font-size: 20px;
+    color:white;
+    background-color: black;
+    border-radius: 4px;
+    margin-top: 5px;
+}

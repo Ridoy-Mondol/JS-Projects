@@ -1,0 +1,37 @@
+span{
+    color:green;
+    font-size: 20px;
+    border:2px solid black;
+    padding:3px 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+table{
+    margin:15px
+}
+.btn{
+    padding:2px 20px;
+    background-color: rgba(0, 0, 0, 0.605);
+    color:white;
+}
+.btn-2{
+    width:31px;
+    padding:2px 10px;
+    background-color: rgba(0, 0, 0, 0.605);
+    color:white;
+}
+
+.btn-3{
+    height: 23.2px;
+    width: 50.61px;
+    background-color: rgba(0, 0, 0, 0.605);
+    color:white;
+}
+.text{
+    border:2px solid black;
+    width:100%;
+    border-right: none;
+}
+
+
+
